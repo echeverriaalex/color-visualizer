@@ -39,7 +39,7 @@ addButton.addEventListener('click', () => {
   }
 
   if(!colorList.includes(color)) {
-    colorList.push(color);
+    colorList.unshift(color);
     renderColorList();
     inputColor.value = '';
     return;
